@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="sign-up-container">
+        <div class="intro">
+            <h1>Learn to code by watching others</h1>
+            <p>
+                See how experienced developers solve problems in real-time. 
+                Watching scripted tutorials is great, but understanding how developers 
+                think is invaluable.
+            </p>
+        </div>
+        <div class="form-container">
+            <div class="trial">
+                <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+            </div>
+            <form action="">
+                <div class="form-inputs">
+                    <div class="inputDiv">
+                        <input type="text" name="firstname" id="firstname" value="" placeholder="First Name" required>
+                        <img src="images/icon-error.svg" alt="error-icon" class="image">
+                    </div>
+                    <p id="errFirst" class="error"></p>
+                    <div class="inputDiv">
+                        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                        <img src="images/icon-error.svg" alt="error-icon" class="image">
+                    </div>
+                    <p id="errLast" class="error"></p>
+                    <div class="inputDiv">
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                        <img src="images/icon-error.svg" alt="error-icon" class="image">
+                    </div>
+                    <p id="errEmail" class="error"></p>
+                    <div class="inputDiv">
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <img src="images/icon-error.svg" alt="error-icon" class="image">
+                    </div>
+                    <p id="errPass" class="error"></p>
+                    <input type="submit" id="submit" value="CLAIM YOUR FREE TRIAL">
+                    <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

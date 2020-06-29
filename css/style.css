@@ -1,0 +1,235 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sign-up-container {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 800px;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    color: white;
+    width: 500px;
+    height: 220px;
+    font-size: 16px;
+    margin-right: 75px;
+}
+
+.intro h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.intro p {
+    font-weight: 400;
+}
+
+.trial {
+    width: 540px;
+    height: 60px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    box-shadow: 0px 7px hsl(249, 10%, 26%, 20%);
+    margin-bottom: 30px;
+}
+
+.trial p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    line-height: 4;
+}
+
+.trial p span {
+    font-weight: 600;
+}
+
+form {
+    width: 540px;
+    min-height: 475px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 7px hsl(249, 10%, 26%, 20%);
+}
+
+.form-inputs {
+    width: 460px;
+    min-height: 385px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+input {
+    width: 428px;
+    height: 53px;
+    padding: 0;
+    padding-left: 30px;
+    border-radius: 5px;
+    font: 600 14px 'Poppins', sans-serif;
+    border: 1px solid hsl(0, 0%, 87%);
+    /* color: hsl(246, 25%, 77%); */
+    color: black;
+
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
+}
+.inputDiv {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    display: none;
+}
+
+
+input:focus {
+    outline: none;
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+#submit {
+    padding: 0;
+    width: 458px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px rgb(50,184, 125);
+    border: 1px solid rgb(89, 184, 142);
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(119, 226, 180);
+    box-shadow: 0px 5px rgb(134,192, 167);
+    border: 1px solid rgb(146, 212, 184);
+}
+
+.error {
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin: 0;
+    margin-top: 5px;
+    height: 15px;
+    font-style: italic;
+
+    display: none;
+}
+
+.terms {
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin: 0;
+
+    margin: 20px auto 0;
+    padding-bottom: 40px;
+}
+
+.terms span {
+    color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 1130px) {
+    .sign-up-container {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro {
+        height: 280px;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+
+
+@media (max-width: 550px) {
+
+    .sign-up-container {
+        height: 1000px;
+        background-image: url("../images/bg-intro-mobile.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro {
+        width: 325px;
+        height: 210px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .intro h1 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .trial {
+        width: 325px;
+        height: 90px;
+    }
+    
+    .trial p {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin: 0 auto;
+        padding-top: 15px; 
+        line-height: 2;
+        width: 175px;
+    }
+
+    .form-inputs {
+        width: 275px;
+        min-height: 435px;
+        padding-top: 10px;
+    }
+
+    form {
+        width: 325px;
+        min-height: 445px;
+    }
+
+    input {
+        width: 245px;
+        margin-top: 15px;
+    }
+
+    .image {
+        right: 20px;
+        top: 30px;
+    }
+
+    #submit {
+        width: 275px;
+    }
+
+    .terms {
+        width: 250px;
+        padding-bottom: 30px;
+    }
+
+}
